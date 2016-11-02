@@ -3,34 +3,38 @@
 <head>
   <meta charset="utf-8">
   <title>Calculadora Flex</title>
-  <link rel="stylesheet" href="style.css" type="text/css" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="stylesheet" href="dist/css/ratchet.css" />
+  <script src="dist/js/ratchet.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Calculadora Flex</h1>
+  <header class="bar bar-nav">
+    <h1 class="title">Calculadora Flex</h1>
   </header>
   <div class="content">
-    <form class="form">
-      <div>
+    <form class="form input-group">
+      <div class="input-row">
         <label for="Gas_Cons">Consumo com gasolina:</label>
         <input type="number" name="Gas_Cons" id="Gas_Cons">
       </div>
-      <div>
+      <div class="input-row">
         <label for="Eta_Cons">Consumo com etanol:</label>
         <input type="number" name="Eta_Cons" id="Eta_Cons">
       </div>
-      <div>
+      <div class="input-row">
         <label for="Gas_Price">Gasolina:</label>
         <input type="number" name="Gas_Price" id="Gas_Price" placeholder="Preço da gasolina">
       </div>
-      <div>
+      <div class="input-row">
         <label>Etanol:</label>
         <input type="number" name="Eta_Price" id="Eta_Price" placeholder="Preço do etanol">
       </div>
     </form>
   </div>
-  <div>
-    <button onclick="CalcFlex()" type="button">Gasolina ou etanol?</button>
+  <div class="bar bar-standard bar-footer">
+    <button class="btn btn-primary btn-block" onclick="CalcFlex()" type="button">Gasolina ou etanol?</button>
   </div>
 </body>
 <script src="lstorage.js"></script>
